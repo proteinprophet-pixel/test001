@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090a0d;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e1014;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262b36;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363d4c;
+}
+
+/* Athletic Grid Pattern Texture */
+.bg-track-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Crisp Athletic Metric Number */
+.font-metric {
+  font-family: ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Consolas, monospace;
+  font-feature-settings: "tnum" 1;
+}
